@@ -1,5 +1,5 @@
 "use client"; // Enables client-side rendering in Next.js
-
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -35,6 +35,13 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       <h1 className="text-3xl font-bold mb-4">Pokémon Info</h1>
       <div className="bg-white shadow-lg rounded-lg p-6 w-80">
+        <Image
+          src={data.sprites.front_default}
+          alt="Image Of Me"
+          width={150}
+          height={150}
+          className="m-auto rounded-xl border-2 border-black"
+        />
         <h2 className="text-xl font-semibold text-center capitalize">{data.name}</h2>
         <p className="text-gray-700 text-center">Base Experience: {data.base_experience}</p>
         <h3 className="mt-4 text-lg font-semibold">Type:</h3>
