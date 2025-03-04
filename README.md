@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **Next.js API Fetching Project**
 
-## Getting Started
+This is a simple **Next.js web application** that fetches and displays data from the **PokeAPI** using **client-side fetching**.
 
-First, run the development server:
+## **🚀 Features**
+- Fetches data from the [PokeAPI](https://pokeapi.co/)
+- Displays Pokémon **name, base experience, and abilities**
+- Uses **client-side fetching** with `useEffect`
+- Includes **error handling and loading states**
+- Styled with **Tailwind CSS** for a clean UI
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## **🛠 Setup Instructions**
+### **1. Clone the Repository**
+```sh
+git clone https://github.com/your-username/nextjs-api-fetching.git
+cd nextjs-api-fetching
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **2. Install Dependencies**
+```sh
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### **3. Run the Development Server**
+```sh
+npm run dev
+```
+Then, open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## **📁 Project Structure**
+```
+nextjs-api-fetching/
+│── pages/
+│   ├── index.js  # Home page with API fetching
+│── public/       # Static assets (if needed)
+│── styles/       # CSS or Tailwind config
+│── package.json  # Project dependencies and scripts
+└── README.md     # Project documentation
+```
 
-## Learn More
+## **📌 Why Client-Side Fetching?**
+- The data is **dynamic** and updates frequently.
+- No need for **SEO optimization** or pre-rendering.
+- Allows **faster initial page loads** with on-demand updates.
 
-To learn more about Next.js, take a look at the following resources:
+## **📜 License**
+This project is open-source and available under the **MIT License**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
